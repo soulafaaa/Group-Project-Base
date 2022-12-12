@@ -3,10 +3,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Project Base</title>
-    <link rel="stylesheet" href="styles.css">
+    <titleF>Final asteroid Trake</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="neows.js"></script>
 </head>
 <body>
-    <script src="./script.js"></script>
-</body>
-</html>
+    <h1>Asteroid Traker</h1>
+    <form id = "form">
+        <label for = "start-date"> Start date:</label>
+        <input type="Date" id ="start-date"/>
+        <br/>
+        <label for = "end-date"> End date:</label>
+        <input type="Date" id ="end-date"/>
+        <br/>
+        <button type="submit">Get asteroid Date</button>
+    </form>
+    <br/>
+    <h2>Asteroid List</h2>
+     <ul id="asteroid-list"></ul>
+     <button type="button">Previous</button>
+    <button type="button">Next</button>
+     <script src="script.js"></script>
+    </body>
+  </html>
