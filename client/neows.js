@@ -21,15 +21,14 @@ function getAsteroids(data) {
   // check if the "near_earth_objects" key exists in the data object
   if (data.hasOwnProperty('near_earth_objects')) {
     // if the key exists, log the array of values to the console
-    //console.log(data.near_earth_objects);
+    console.log(data.near_earth_objects);
 
     // return the array of values
     return data.near_earth_objects;
   }
-  // if the key does not exist, log a message to the console
-  //console.log('trash');
 
-  // return an empty array
+  console.log('trash');
+
   return [];
 }
 
@@ -38,7 +37,6 @@ function getAsteroidName(asteroid) {
   return asteroid.name;
 }
 
-// Returns the estimated diameter of an asteroid in kilometers
 // Returns the estimated diameter of an asteroid in kilometers
 function getAsteroidDiameter(asteroid) {
   if (asteroid.estimated_diameter && asteroid.estimated_diameter.kilometers) {
@@ -51,9 +49,9 @@ function getAsteroidDiameter(asteroid) {
 // Returns the estimated speed of an asteroid in kilometers per hour
 // Returns the estimated speed of an asteroid in kilometers per hour
 function getAsteroidSpeed(asteroid) {
-    if (asteroid.close_approach_data && asteroid.close_approach_data.length > 0 
-        && asteroid.close_approach_data[0].relative_velocity) {
-    const {kph} = asteroid.close_approach_data[0].relative_velocity;
+  if (asteroid.close_approach_data && asteroid.close_approach_data.length > 0
+    && asteroid.close_approach_data[0].relative_velocity) {
+    const { kph } = asteroid.close_approach_data[0].relative_velocity;
     return `${kph} km/h`;
   }
   return 'unknown';
@@ -61,7 +59,7 @@ function getAsteroidSpeed(asteroid) {
 
 // Returns the estimated distance of an asteroid from Earth in kilometers
 function getAsteroidDistance(asteroid) {
-  if (asteroid.close_approach_data && asteroid.close_approach_data.length > 0 
+  if (asteroid.close_approach_data && asteroid.close_approach_data.length > 0
     && asteroid.close_approach_data[0].miss_distance) {
     const { kilometers } = asteroid.close_approach_data[0].miss_distance;
     const num = Number(kilometers);
