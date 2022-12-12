@@ -20,6 +20,7 @@ function generateAsteroidList(asteroids, list) {
       list.appendChild(item);
     }
   }
+}
 
 const startDateElement = document.getElementById('start-date');
 const endDateElement = document.getElementById('end-date');
