@@ -43,7 +43,6 @@ button {
 
 #asteroid-list {
   display: flex;
-  list-style-type: auto;
   margin: 0;
   padding: 0;
   flex-direction: row;

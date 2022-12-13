@@ -16,7 +16,7 @@ function generateAsteroidList(asteroids, list) {
       const diameter = getAsteroidDiameter(asteroid);
       const item = document.createElement('li');
 
-      item.innerHTML = `<strong>${name}</strong><br /> Diameter: ${diameter}<br /> Speed: ${speed}<br /> Distance from our homeland: ${distance}<br>`;
+      item.innerHTML = `<strong>Name: ${name}</strong><br /> Diameter: ${diameter}<br /> Speed: ${speed}<br /> Distance from our homeland: ${distance}<br>`;
       list.appendChild(item);
     }
   }
