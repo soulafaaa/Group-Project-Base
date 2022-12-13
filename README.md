@@ -1,11 +1,11 @@
 ## Nearest Asteroid Traker
 ---
 
- **Link:** [Github link:](https://github.com/soulafaaa Group-Project-Base) 
+ **Link:** [Github link:](https://github.com/soulafaaa Group-Project-Base)  <br/>
  
 
 ### Project Description :
-**API used:** [API Link:](https://api.nasa.gov/)
-**Description of target browser:** Webpages
-**What is your actual project trying to display and solve?**
- It infomms the genral public on near by Asteroid.
+**API used:** [API Link:](https://api.nasa.gov/) <br/>
+**Description of target browser:** Webpages <br/>
+**What is your actual project trying to display and solve?** <br/>
+ It infomms the genral public on near by Asteroid. <br/>
